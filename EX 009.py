@@ -1,5 +1,7 @@
 #Exercício Python 009: Faça um programa que leia um número Inteiro qualquer e mostre na tela a sua tabuada.
 
+#Python Exercise 009: Write a program that reads any integer and displays its multiplication table on the screen.
+
 n1 = int(input("Digite um numero para ver a tabuada: "))
 
 print('-' * 20)
