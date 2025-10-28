@@ -4,9 +4,13 @@
 #Python Exercise 028: Write a program that makes the computer "think" of an integer between 0 and 5
 #and asks the user to try to guess which number the computer chose. The program should display on the screen whether the user won or lost.
 
-import random 
+import random
+from time import sleep
 
+
+print("-=-" * 10)
 print("Vou Pensar em um numero entre 0 a 5. tente adivinhar!")
+print("-=-" * 10)
 
 p = int(input("Em que numero eu pensei: "))
 
@@ -14,7 +18,11 @@ l = [0,1,2,3,4,5]
 
 r = random.choice(l)
 
+sleep(1)
+
 print("processando ...")
+
+sleep(3)
 
 if p == r:
    print("Parabens, voce acertou, eu pensei no numero: {}".format(r))
